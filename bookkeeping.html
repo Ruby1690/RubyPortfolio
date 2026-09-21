@@ -1,244 +1,889 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ===== SAMPLE WORK ===== -->
-<section class="sample-works" id="work">
-  <div class="container">
+  <title>Ruby | Bookkeeping Services</title>
 
-    <h2 class="section-title">My Sample Works</h2>
+  <style>
+    /* ===== COLOR THEME ===== */
+    :root {
+      --teal: #78b9ad;
+      --dark-teal: #24574f;
+      --light-teal: #e6f3ef;
+      --cream: #fffaf2;
+      --white: #ffffff;
+      --text: #334b46;
+      --muted: #687d77;
+    }
 
-    <p class="section-subtitle">
-      Explore my bookkeeping projects and see how I
-      organize financial records and work with
-      QuickBooks Online.
-    </p>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- ===== PROJECT 1 ===== -->
-    <div class="project-section">
+    html {
+      scroll-behavior: smooth;
+    }
 
-      <div class="project-heading">
-        <span class="project-number">PROJECT 01</span>
-        <h3>Accounts Payable Processing</h3>
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* ===== NAVIGATION ===== */
+    header {
+      background: var(--white);
+      padding: 18px 0;
+      border-bottom: 1px solid #e4eeea;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--dark-teal);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a:hover {
+      color: #4b9b8b;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--dark-teal);
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #39796e;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--dark-teal);
+      border: 2px solid var(--dark-teal);
+      margin-left: 8px;
+    }
+
+    /* ===== INTRODUCTION ===== */
+    .hero {
+      padding: 75px 0;
+      background: var(--light-teal);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: var(--dark-teal);
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 23px;
+      margin-bottom: 15px;
+      color: #39796e;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+    }
+
+    .hero-image {
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 340px;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 48% 48% 20px 20px;
+      border: 8px solid white;
+      box-shadow: 0 10px 30px #24574f20;
+    }
+
+    .contact-info {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .contact-info p {
+      margin: 7px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-info a {
+      color: var(--dark-teal);
+    }
+
+    /* ===== GENERAL SECTIONS ===== */
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: var(--dark-teal);
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin: 0 auto 40px;
+      max-width: 650px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .about-content p {
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: var(--dark-teal);
+      font-weight: bold;
+    }
+
+    /* ===== SKILLS & TOOLS ===== */
+    .skills {
+      background: var(--light-teal);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #24574f0c;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--dark-teal);
+      margin-bottom: 14px;
+      font-size: 20px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .card-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .tool-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: var(--light-teal);
+      color: var(--dark-teal);
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* ===== SAMPLE WORK ===== */
+    .project-card {
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .project-preview {
+      background: var(--light-teal);
+      padding: 28px;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .project-preview span {
+      font-size: 42px;
+    }
+
+    .project-details {
+      padding: 25px;
+    }
+
+    .project-details h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-details p {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .project-link {
+      color: #39796e;
+      font-weight: bold;
+    }
+
+    .sample-note {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ===== PACKAGES ===== */
+    .packages {
+      background: var(--light-teal);
+    }
+
+    .package-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .package-card .btn {
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .package-price {
+      color: var(--dark-teal);
+      font-size: 25px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .package-card ul {
+      margin-bottom: 25px;
+    }
+
+    .package-label {
+      display: inline-block;
+      background: var(--teal);
+      color: #153d37;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-section {
+      text-align: center;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      background: var(--light-teal);
+      padding: 40px;
+      border-radius: 18px;
+    }
+
+    .contact-box p {
+      margin: 12px 0 25px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark-teal);
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 14px;
+    }
+
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media (max-width: 800px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .hero {
+        padding: 45px 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      .section-title {
+        font-size: 27px;
+      }
+
+      .btn-outline {
+        margin: 10px 0 0;
+      }
+
+      .contact-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home" class="logo">Ruby.</a>
+
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills & Tools</a></li>
+          <li><a href="#work">Sample Work</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== INTRODUCTION ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+
+      <div class="hero-text">
+        <h1>Hi, I'm Ruby —<br>Your Reliable Bookkeeper!</h1>
+
+        <h2>
+          Does bookkeeping take up too much
+          of your valuable time?
+        </h2>
 
         <p>
-          A demonstration of the purchasing-to-payment
-          workflow, from recording supplier bills to
-          applying payments and updating AP records.
+          You have a business to run, and keeping up with
+          invoices, expenses, and financial records can be
+          time-consuming.
+
+          Let me help you keep your books organized and
+          up to date, so you can focus more on your business,
+          your customers, and your goals.
         </p>
 
-        <div class="project-tags">
-          <span>Purchasing</span>
-          <span>Bill Entry</span>
-          <span>Payments</span>
-          <span>AP Reports</span>
+        <a href="#packages" class="btn">View My Services</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+        <div class="contact-info">
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/"
+               target="_blank" rel="noopener">
+              Your LinkedIn Profile
+            </a>
+          </p>
+
+          <p>
+            <strong>Contact:</strong>
+            <a href="tel:+639XXXXXXXXX">
+              +63 9XX XXX XXXX
+            </a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:your.email@example.com">
+              your.email@example.com
+            </a>
+          </p>
         </div>
       </div>
 
-      <div class="video-grid">
+      <div class="hero-image">
+        <!-- Replace this with your own photo -->
+        <img
+          src="ruby-photo.jpg"
+          alt="Ruby, your reliable bookkeeper"
+        >
+      </div>
 
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ap-video-1.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>01. Recording Supplier Bills</h4>
-            <p>
-              Demonstration of entering supplier
-              invoices and recording bills in QuickBooks.
-            </p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about">
+    <div class="container">
+
+      <h2 class="section-title">About Me</h2>
+
+      <p class="section-subtitle">
+        A little about me and how I can support your business.
+      </p>
+
+      <div class="about-content">
+        <p>
+          Hi! I'm Ruby, a detail-oriented bookkeeper with
+          experience in invoicing, accounts receivable,
+          purchasing, accounts payable processing,
+          construction payroll, and expense reporting.
+        </p>
+
+        <p>
+          I have worked across the
+          <span class="highlight">
+            construction, retail, and hospitality industries
+          </span>,
+          helping maintain organized financial records
+          and support day-to-day business operations.
+        </p>
+
+        <p>
+          I'm a Certified QuickBooks ProAdvisor, skilled in
+          transaction recording and categorization,
+          account management and reconciliation, and
+          financial reporting, including Profit & Loss
+          and Balance Sheet preparation.
+        </p>
+
+        <p>
+          My goal is to provide dependable bookkeeping
+          support so business owners can spend more time
+          focusing on their operations and growth.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS & TOOLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+
+      <h2 class="section-title">Skills & Tools</h2>
+
+      <p class="section-subtitle">
+        Bookkeeping skills and software I use to help
+        keep business records organized.
+      </p>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon">🧾</div>
+          <h3>Accounts Payable</h3>
+          <ul>
+            <li>Purchasing support</li>
+            <li>Supplier invoice processing</li>
+            <li>Bill recording</li>
+            <li>Payment recording</li>
+            <li>AP record updates</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📨</div>
+          <h3>Accounts Receivable</h3>
+          <ul>
+            <li>Invoice creation</li>
+            <li>Customer billing</li>
+            <li>Payment recording</li>
+            <li>Invoice tracking</li>
+            <li>AR record updates</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Bookkeeping & Reporting</h3>
+          <ul>
+            <li>Transaction recording</li>
+            <li>Expense categorization</li>
+            <li>Account reconciliation</li>
+            <li>Expense reporting</li>
+            <li>Profit & Loss reports</li>
+            <li>Balance Sheet reports</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">👷</div>
+          <h3>Payroll Support</h3>
+          <ul>
+            <li>Construction payroll support</li>
+            <li>Payroll record maintenance</li>
+            <li>Payroll data organization</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Software & Tools</h3>
+
+          <div class="tool-tags">
+            <span class="tag">QuickBooks Online</span>
+            <span class="tag">Microsoft Excel</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">NetSuite (previous experience)</span>
           </div>
         </div>
 
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ap-video-2.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>02. Recording Bill Payments</h4>
-            <p>
-              Demonstration of applying payments
-              to outstanding supplier bills.
-            </p>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ap-video-3.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>03. Reviewing AP Reports</h4>
-            <p>
-              Demonstration of reviewing outstanding
-              bills and accounts payable balances.
-            </p>
-          </div>
+        <div class="card">
+          <div class="card-icon">🌿</div>
+          <h3>Work Approach</h3>
+          <ul>
+            <li>Attention to detail</li>
+            <li>Organized recordkeeping</li>
+            <li>Confidentiality</li>
+            <li>Time management</li>
+            <li>Clear communication</li>
+          </ul>
         </div>
 
       </div>
     </div>
+  </section>
 
+  <!-- ===== SAMPLE WORK ===== -->
+  <section id="work">
+    <div class="container">
 
-    <!-- ===== PROJECT 2 ===== -->
-    <div class="project-section">
+      <h2 class="section-title">Sample Works</h2>
 
-      <div class="project-heading">
-        <span class="project-number">PROJECT 02</span>
-        <h3>Financial Reporting</h3>
+      <p class="section-subtitle">
+        A look at my bookkeeping skills through
+        sample projects and reports.
+      </p>
+
+      <div class="card-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="card project-card">
+          <div class="project-preview">
+            <div>
+              <span>📑</span>
+              <h3>Accounts Payable</h3>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <h3>Purchasing to Payment Processing</h3>
+
+            <p>
+              A sample workflow showing supplier invoice
+              processing, bill recording, payment application,
+              and updating outstanding AP balances.
+            </p>
+
+            <!-- Replace # with your actual project link -->
+            <a href="#" class="project-link">
+              View Sample →
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="card project-card">
+          <div class="project-preview">
+            <div>
+              <span>📈</span>
+              <h3>Financial Reports</h3>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <h3>Profit & Loss and Balance Sheet</h3>
+
+            <p>
+              Sample financial reports for a fictional
+              small business, demonstrating financial
+              statement preparation in QuickBooks.
+            </p>
+
+            <a href="#" class="project-link">
+              View Sample →
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="card project-card">
+          <div class="project-preview">
+            <div>
+              <span>💰</span>
+              <h3>Expense Reporting</h3>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <h3>Monthly Expense Report</h3>
+
+            <p>
+              A sample monthly expense report showing
+              business expenditures organized by
+              category and reporting period.
+            </p>
+
+            <a href="#" class="project-link">
+              View Sample →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="sample-note">
+        Note: Sample projects use fictional company
+        information and are for demonstration purposes.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===== SERVICE PACKAGES ===== -->
+  <section class="packages" id="packages">
+    <div class="container">
+
+      <h2 class="section-title">My Service Packages</h2>
+
+      <p class="section-subtitle">
+        Flexible bookkeeping support based on your
+        business needs. Let's discuss a package
+        that works for you.
+      </p>
+
+      <div class="card-grid">
+
+        <!-- PACKAGE 1 -->
+        <div class="card package-card">
+          <h3>Essential Support</h3>
+
+          <p>
+            For businesses needing help with
+            basic bookkeeping tasks.
+          </p>
+
+          <div class="package-price">
+            Let's Discuss
+          </div>
+
+          <ul>
+            <li>Invoice creation</li>
+            <li>Expense recording</li>
+            <li>Transaction categorization</li>
+            <li>Basic expense reporting</li>
+          </ul>
+
+          <a href="#contact" class="btn">
+            Inquire Now
+          </a>
+        </div>
+
+        <!-- PACKAGE 2 -->
+        <div class="card package-card">
+          <span class="package-label">Popular Option</span>
+
+          <h3>Accounts Management</h3>
+
+          <p>
+            For businesses needing ongoing
+            AP and AR assistance.
+          </p>
+
+          <div class="package-price">
+            Let's Discuss
+          </div>
+
+          <ul>
+            <li>Accounts payable processing</li>
+            <li>Accounts receivable support</li>
+            <li>Invoice and payment tracking</li>
+            <li>Expense recording</li>
+            <li>AP/AR report generation</li>
+          </ul>
+
+          <a href="#contact" class="btn">
+            Inquire Now
+          </a>
+        </div>
+
+        <!-- PACKAGE 3 -->
+        <div class="card package-card">
+          <h3>Monthly Bookkeeping</h3>
+
+          <p>
+            For businesses needing regular
+            bookkeeping and reporting support.
+          </p>
+
+          <div class="package-price">
+            Let's Discuss
+          </div>
+
+          <ul>
+            <li>Transaction recording</li>
+            <li>Expense categorization</li>
+            <li>Bank reconciliation</li>
+            <li>Profit & Loss report</li>
+            <li>Balance Sheet report</li>
+          </ul>
+
+          <a href="#contact" class="btn">
+            Inquire Now
+          </a>
+        </div>
+
+      </div>
+
+      <p class="sample-note">
+        Services and pricing are subject to the
+        agreed scope of work and transaction volume.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ME ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+
+      <div class="contact-box">
+        <h2 class="section-title">Let's Work Together!</h2>
 
         <p>
-          A sample financial reporting project showing
-          how business transactions are reflected in
-          financial statements using QuickBooks Online.
+          Need help keeping your books organized?
+          I'd love to hear about your business and
+          how I can support you.
         </p>
 
-        <div class="project-tags">
-          <span>Profit & Loss</span>
-          <span>Balance Sheet</span>
-          <span>Expense Reports</span>
-        </div>
-      </div>
+        <a
+          href="mailto:your.email@example.com?subject=Bookkeeping%20Inquiry"
+          class="btn"
+        >
+          Email Me
+        </a>
 
-      <div class="video-grid">
+        <p class="contact-info">
+          <strong>Email:</strong>
+          your.email@example.com
+          <br>
 
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/report-video-1.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>01. Profit & Loss Report</h4>
-            <p>
-              Demonstration of generating and reviewing
-              a Profit & Loss report.
-            </p>
-          </div>
-        </div>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/"
+             target="_blank" rel="noopener">
+            Connect with me
+          </a>
+          <br>
 
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/report-video-2.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>02. Balance Sheet</h4>
-            <p>
-              Demonstration of generating a Balance
-              Sheet and reviewing assets, liabilities,
-              and equity.
-            </p>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/report-video-3.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>03. Expense Reporting</h4>
-            <p>
-              Demonstration of generating a report
-              to summarize business expenses.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- ===== PROJECT 3 ===== -->
-    <div class="project-section">
-
-      <div class="project-heading">
-        <span class="project-number">PROJECT 03</span>
-        <h3>Accounts Receivable & Invoicing</h3>
-
-        <p>
-          A demonstration of customer invoicing,
-          recording payments, and reviewing
-          accounts receivable records.
+          <strong>Contact:</strong>
+          +63 9XX XXX XXXX
         </p>
-
-        <div class="project-tags">
-          <span>Customer Invoices</span>
-          <span>Payments</span>
-          <span>AR Reports</span>
-        </div>
       </div>
 
-      <div class="video-grid">
-
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ar-video-1.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>01. Creating Customer Invoices</h4>
-            <p>
-              Demonstration of creating and saving
-              customer invoices in QuickBooks.
-            </p>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ar-video-2.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>02. Recording Customer Payments</h4>
-            <p>
-              Demonstration of recording customer
-              payments and applying them to invoices.
-            </p>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <video controls preload="metadata">
-            <source
-              src="videos/ar-video-3.mp4"
-              type="video/mp4">
-            Your browser does not support video.
-          </video>
-          <div class="video-info">
-            <h4>03. Reviewing AR Reports</h4>
-            <p>
-              Demonstration of reviewing unpaid
-              invoices and accounts receivable balances.
-            </p>
-          </div>
-        </div>
-
-      </div>
     </div>
+  </section>
 
-    <p class="sample-note">
-      All sample projects use fictional business
-      information for demonstration purposes.
-    </p>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>
+        © 2026 Ruby | Bookkeeping Services
+      </p>
+      <p>
+        Keeping your books organized,
+        so you can focus on your business.
+      </p>
+    </div>
+  </footer>
 
-  </div>
-</section>
+</body>
+</html>
