@@ -1,1159 +1,439 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruby Ann Junio | US Bookkeeper</title>
-
-    <meta
-        name="description"
-        content="Professional US Bookkeeper and Accountant offering project-based bookkeeping, cleanup, catch-up, and ongoing bookkeeping services."
-    >
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
-
-    <!-- ================= NAVIGATION ================= -->
-
+    <!-- ================= HEADER ================= -->
     <header class="header">
-
-        <nav class="navbar container">
+        <div class="container nav-container">
 
             <a href="#home" class="logo">
-
-                <span class="logo-mark">
-                    R
-                </span>
-
-                <span>
-                    Ruby Ann Junio
-                </span>
-
+                Ruby Ann Junio
             </a>
 
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open navigation"
-            >
-                ☰
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
 
-            <ul class="nav-links" id="navLinks">
-
-                <li>
-                    <a href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#services">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#portfolio">
-                        Portfolio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact" class="nav-contact">
-                        Contact Me
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
+        </div>
     </header>
 
 
-
-    <!-- ================= HOME ================= -->
-
     <main>
 
-        <section id="home" class="hero">
+        <!-- ================= HOME ================= -->
+        <!-- The previous ABOUT ME content is now the HOME content -->
+        <section id="home" class="home">
+            <div class="container home-grid">
 
+                <!-- HOME TEXT -->
+                <div class="home-content">
 
-            <!-- ================= HERO ================= -->
-
-            <div class="container hero-content">
-
-
-                <div class="hero-text">
-
-
-                    <p class="eyebrow">
-                        PROFESSIONAL BOOKKEEPING SERVICES
-                    </p>
-
+                    <p class="eyebrow">US BOOKKEEPER & ACCOUNTANT</p>
 
                     <h1>
-                        Reliable bookkeeping for
-                        <span>your business.</span>
-                    </h1>
-
-
-                    <p class="hero-description">
-
-                        I'm a US Bookkeeper & Accountant with more than
-                        10 years of bookkeeping experience, helping businesses
-                        keep their financial records organized, accurate,
-                        and up to date.
-
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#services"
-                            class="btn btn-primary"
-                        >
-                            View My Services
-                        </a>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-secondary"
-                        >
-                            Let's Work Together
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-stats">
-
-
-                        <div class="stat">
-
-                            <strong>
-                                10+
-                            </strong>
-
-                            <span>
-                                Years Experience
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat">
-
-                            <strong>
-                                US
-                            </strong>
-
-                            <span>
-                                Bookkeeping
-                            </span>
-
-                        </div>
-
-
-                        <div class="stat">
-
-                            <strong>
-                                QBO
-                            </strong>
-
-                            <span>
-                                Experience
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- ================= HERO CARD ================= -->
-
-                <div class="hero-card">
-
-
-                    <div class="accounting-card">
-
-
-                        <div class="card-top">
-
-                            <span class="card-label">
-                                BOOKKEEPING
-                            </span>
-
-                            <span class="check-icon">
-                                ✓
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Financial records you can rely on.
-                        </h3>
-
-
-                        <div class="mini-report">
-
-
-                            <div class="report-row">
-
-                                <span>
-                                    Bank Reconciliation
-                                </span>
-
-                                <strong>
-                                    ✓
-                                </strong>
-
-                            </div>
-
-
-                            <div class="report-row">
-
-                                <span>
-                                    Accounts Receivable
-                                </span>
-
-                                <strong>
-                                    ✓
-                                </strong>
-
-                            </div>
-
-
-                            <div class="report-row">
-
-                                <span>
-                                    Accounts Payable
-                                </span>
-
-                                <strong>
-                                    ✓
-                                </strong>
-
-                            </div>
-
-
-                            <div class="report-row">
-
-                                <span>
-                                    Financial Reporting
-                                </span>
-
-                                <strong>
-                                    ✓
-                                </strong>
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- ================================================= -->
-            <!-- ABOUT ME - NOW PART OF THE HOME SECTION -->
-            <!-- ================================================= -->
-
-
-            <div class="container home-about">
-
-
-                <div class="section-heading">
-
-
-                    <p class="eyebrow">
-                        ABOUT ME
-                    </p>
-
-
-                    <h2>
                         Experienced, organized,
                         and detail-oriented.
-                    </h2>
+                    </h1>
 
-
-                    <p>
-
-                        I help businesses maintain organized and accurate
-                        financial records through dependable bookkeeping support.
-
+                    <p class="home-intro">
+                        I help businesses keep their financial records
+                        accurate, organized, and up to date through
+                        reliable bookkeeping support.
                     </p>
 
+                    <div class="home-details">
+
+                        <h2>US Bookkeeper & Accountant</h2>
+
+                        <p>
+                            With over 10 years of experience in accounting
+                            and bookkeeping, I provide dependable financial
+                            support designed around the needs of US-based
+                            businesses.
+                        </p>
+
+                        <p>
+                            I have experience working with US bookkeeping
+                            clients and handling financial records with
+                            accuracy, organization, and attention to detail.
+                        </p>
+
+                        <p>
+                            My services are available on a project-based
+                            basis, including bookkeeping cleanup, catch-up
+                            bookkeeping, and ongoing bookkeeping support.
+                        </p>
+
+                    </div>
+
+                    <!-- HOME POINTS -->
+                    <div class="home-points">
+
+                        <div class="home-point">
+                            <span class="point-number">01</span>
+                            <div>
+                                <h3>10+ Years Experience</h3>
+                                <p>
+                                    Extensive experience in accounting
+                                    and bookkeeping.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="home-point">
+                            <span class="point-number">02</span>
+                            <div>
+                                <h3>US Bookkeeping</h3>
+                                <p>
+                                    Familiar with bookkeeping needs and
+                                    financial records for US businesses.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="home-point">
+                            <span class="point-number">03</span>
+                            <div>
+                                <h3>Project-Based</h3>
+                                <p>
+                                    Flexible support based on your
+                                    bookkeeping requirements.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="home-point">
+                            <span class="point-number">04</span>
+                            <div>
+                                <h3>Output-Focused</h3>
+                                <p>
+                                    Accurate, organized, and reliable
+                                    bookkeeping results.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="home-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Get In Touch
+                        </a>
+                    </div>
 
                 </div>
 
 
+                <!-- HOME PHOTO / VISUAL -->
+                <div class="home-visual">
 
-                <div class="about-grid">
-
-
-                    <!-- ================= PHOTO ================= -->
-
-                    <div class="about-photo">
-
+                    <div class="photo-card">
                         <img
                             src="Ruby_picLinkedIn.png"
-                            alt="Ruby Ann Junio"
-                            class="profile-photo"
+                            alt="Ruby Ann Junio - US Bookkeeper"
                         >
-
                     </div>
 
-
-
-                    <!-- ================= ABOUT CONTENT ================= -->
-
-                    <div class="about-content">
-
-
-                        <h3>
-                            US Bookkeeper & Accountant
-                        </h3>
-
-
-                        <p>
-
-                            I have more than 10 years of bookkeeping experience
-                            and currently work with a US-based bookkeeping client.
-
-                        </p>
-
-
-                        <p>
-
-                            My focus is on helping businesses maintain clean,
-                            organized, and reliable financial records. I offer
-                            project-based bookkeeping services for businesses
-                            that need specific bookkeeping work completed.
-
-                        </p>
-
-
-                        <p>
-
-                            Whether you need bookkeeping cleanup, catch-up
-                            bookkeeping, or ongoing support, I focus on delivering
-                            accurate work based on the agreed scope and output.
-
-                        </p>
-
-
-
-                        <div class="about-points">
-
-
-                            <div>
-
-                                <span>
-                                    ✓
-                                </span>
-
-                                <p>
-                                    10+ years of experience
-                                </p>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    ✓
-                                </span>
-
-                                <p>
-                                    US bookkeeping experience
-                                </p>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    ✓
-                                </span>
-
-                                <p>
-                                    Project-based services
-                                </p>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    ✓
-                                </span>
-
-                                <p>
-                                    Output-focused approach
-                                </p>
-
-                            </div>
-
-
+                    <div class="experience-card">
+                        <span class="experience-number">10+</span>
+                        <div>
+                            <strong>Years of Experience</strong>
+                            <p>Accounting & Bookkeeping</p>
                         </div>
-
-
                     </div>
-
 
                 </div>
-
 
             </div>
-
-
         </section>
-
-
-
-        <!-- ================= SERVICES ================= -->
-
-        <section
-            id="services"
-            class="section services"
-        >
-
-            <div class="container">
-
-
-                <div class="section-heading centered">
-
-
-                    <p class="eyebrow">
-                        WHAT I DO
-                    </p>
-
-
-                    <h2>
-                        Bookkeeping services
-                        tailored to your needs.
-                    </h2>
-
-
-                    <p>
-
-                        Flexible project-based bookkeeping support for
-                        businesses that need accurate and organized records.
-
-                    </p>
-
-
-                </div>
-
-
-
-                <div class="services-grid">
-
-
-                    <!-- SERVICE 1 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            $
-                        </div>
-
-
-                        <h3>
-                            Bank Reconciliation
-                        </h3>
-
-
-                        <p>
-
-                            Review and reconcile bank transactions to help
-                            ensure your books accurately reflect your business
-                            activity.
-
-                        </p>
-
-
-                    </article>
-
-
-
-                    <!-- SERVICE 2 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            AR
-                        </div>
-
-
-                        <h3>
-                            Accounts Receivable
-                        </h3>
-
-
-                        <p>
-
-                            Organize and maintain accounts receivable records
-                            so outstanding customer balances are properly tracked.
-
-                        </p>
-
-
-                    </article>
-
-
-
-                    <!-- SERVICE 3 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            AP
-                        </div>
-
-
-                        <h3>
-                            Accounts Payable
-                        </h3>
-
-
-                        <p>
-
-                            Keep vendor bills and payable transactions organized
-                            and properly recorded.
-
-                        </p>
-
-
-                    </article>
-
-
-
-                    <!-- SERVICE 4 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            FR
-                        </div>
-
-
-                        <h3>
-                            Financial Reporting
-                        </h3>
-
-
-                        <p>
-
-                            Prepare and organize financial information to give
-                            you a clearer view of your business performance.
-
-                        </p>
-
-
-                    </article>
-
-
-
-                    <!-- SERVICE 5 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            CL
-                        </div>
-
-
-                        <h3>
-                            Bookkeeping Cleanup
-                        </h3>
-
-
-                        <p>
-
-                            Help bring disorganized or outdated bookkeeping
-                            records back into order.
-
-                        </p>
-
-
-                    </article>
-
-
-
-                    <!-- SERVICE 6 -->
-
-                    <article class="service-card">
-
-
-                        <div class="service-icon">
-                            CU
-                        </div>
-
-
-                        <h3>
-                            Catch-Up Bookkeeping
-                        </h3>
-
-
-                        <p>
-
-                            Get your bookkeeping caught up when transactions
-                            or financial records have fallen behind.
-
-                        </p>
-
-
-                    </article>
-
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROCESS ================= -->
-
-        <section class="section process">
-
-
-            <div class="container">
-
-
-                <div class="section-heading centered">
-
-
-                    <p class="eyebrow">
-                        MY APPROACH
-                    </p>
-
-
-                    <h2>
-                        Simple. Focused. Output-based.
-                    </h2>
-
-
-                </div>
-
-
-
-                <div class="process-grid">
-
-
-                    <!-- STEP 1 -->
-
-                    <div class="process-step">
-
-
-                        <div class="step-number">
-                            01
-                        </div>
-
-
-                        <h3>
-                            Discuss
-                        </h3>
-
-
-                        <p>
-
-                            We identify the bookkeeping work that needs to
-                            be completed and agree on the project scope.
-
-                        </p>
-
-
-                    </div>
-
-
-
-                    <!-- STEP 2 -->
-
-                    <div class="process-step">
-
-
-                        <div class="step-number">
-                            02
-                        </div>
-
-
-                        <h3>
-                            Work
-                        </h3>
-
-
-                        <p>
-
-                            I work through the agreed bookkeeping tasks with
-                            attention to accuracy and organization.
-
-                        </p>
-
-
-                    </div>
-
-
-
-                    <!-- STEP 3 -->
-
-                    <div class="process-step">
-
-
-                        <div class="step-number">
-                            03
-                        </div>
-
-
-                        <h3>
-                            Deliver
-                        </h3>
-
-
-                        <p>
-
-                            You receive the agreed output and completed
-                            bookkeeping work.
-
-                        </p>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
 
 
         <!-- ================= PORTFOLIO ================= -->
-
-        <section
-            id="portfolio"
-            class="section portfolio"
-        >
-
-
+        <section id="portfolio" class="section portfolio">
             <div class="container">
 
-
                 <div class="section-heading">
-
-
-                    <p class="eyebrow">
-                        PORTFOLIO
-                    </p>
-
+                    <p class="eyebrow">PORTFOLIO</p>
 
                     <h2>
-                        My bookkeeping experience.
+                        Selected bookkeeping work.
                     </h2>
 
-
                     <p>
-
-                        A selection of bookkeeping work and training
-                        experience that demonstrates my familiarity with
-                        QuickBooks Online and bookkeeping processes.
-
+                        Examples of bookkeeping, cleanup, and financial
+                        reporting projects.
                     </p>
-
-
                 </div>
-
 
 
                 <div class="portfolio-grid">
 
-
-                    <!-- PORTFOLIO 1 -->
-
+                    <!-- Portfolio 1 -->
                     <article class="portfolio-card">
-
-
-                        <div class="portfolio-image qbo-image">
-
-                            <span>
-                                QUICKBOOKS<br>
-                                ONLINE
-                            </span>
-
-                        </div>
-
+                        <div class="portfolio-number">01</div>
 
                         <div class="portfolio-content">
-
-
-                            <span class="portfolio-tag">
-                                QUICKBOOKS ONLINE
-                            </span>
-
+                            <p class="portfolio-category">
+                                BOOKKEEPING
+                            </p>
 
                             <h3>
                                 Full-Year Bookkeeping Simulation
                             </h3>
 
-
                             <p>
-
-                                Completed a simulated bookkeeping project
-                                covering January 1 through December 31, 2024,
-                                using QuickBooks Online and simulated
-                                transactions.
-
+                                A complete bookkeeping workflow covering
+                                transaction recording, reconciliation,
+                                categorization, and financial reporting.
                             </p>
 
-
-                            <!-- Add your video link here later -->
-
-                            <a
-                                href="#"
-                                class="portfolio-link"
-                            >
-                                View Project →
-                            </a>
-
-
+                            <span class="portfolio-link">
+                                Bookkeeping Project
+                            </span>
                         </div>
-
-
                     </article>
 
 
-
-                    <!-- PORTFOLIO 2 -->
-
+                    <!-- Portfolio 2 -->
                     <article class="portfolio-card">
-
-
-                        <div class="portfolio-image cleanup-image">
-
-                            <span>
-                                BOOKKEEPING<br>
-                                CLEANUP
-                            </span>
-
-                        </div>
-
+                        <div class="portfolio-number">02</div>
 
                         <div class="portfolio-content">
-
-
-                            <span class="portfolio-tag">
+                            <p class="portfolio-category">
                                 CLEANUP
-                            </span>
-
+                            </p>
 
                             <h3>
                                 Bookkeeping Cleanup Project
                             </h3>
 
-
                             <p>
-
-                                Experience working with bookkeeping cleanup
-                                tasks, reviewing transactions and organizing
-                                financial records.
-
+                                A bookkeeping cleanup project focused on
+                                identifying discrepancies, organizing
+                                transactions, and preparing accurate records.
                             </p>
 
-
-                            <a
-                                href="#contact"
-                                class="portfolio-link"
-                            >
-                                Discuss a Project →
-                            </a>
-
-
+                            <span class="portfolio-link">
+                                Cleanup Project
+                            </span>
                         </div>
-
-
                     </article>
 
 
-
-                    <!-- PORTFOLIO 3 -->
-
+                    <!-- Portfolio 3 -->
                     <article class="portfolio-card">
-
-
-                        <div class="portfolio-image reporting-image">
-
-                            <span>
-                                FINANCIAL<br>
-                                REPORTING
-                            </span>
-
-                        </div>
-
+                        <div class="portfolio-number">03</div>
 
                         <div class="portfolio-content">
-
-
-                            <span class="portfolio-tag">
-                                ACCOUNTING
-                            </span>
-
+                            <p class="portfolio-category">
+                                REPORTING
+                            </p>
 
                             <h3>
                                 Financial Reporting
                             </h3>
 
-
                             <p>
-
-                                Experience organizing bookkeeping information
-                                and preparing financial reports for business
-                                review.
-
+                                Preparation and review of financial reports
+                                to help provide a clear view of business
+                                financial activity.
                             </p>
 
-
-                            <a
-                                href="#contact"
-                                class="portfolio-link"
-                            >
-                                Work With Me →
-                            </a>
-
-
+                            <span class="portfolio-link">
+                                Reporting Project
+                            </span>
                         </div>
-
-
                     </article>
 
-
                 </div>
-
-
-
-                <!-- PORTFOLIO NOTE -->
-
-                <div class="portfolio-note">
-
-
-                    <strong>
-                        Have bookkeeping work that needs attention?
-                    </strong>
-
-
-                    <p>
-
-                        I accept project-based bookkeeping work including
-                        cleanup, catch-up, and ongoing bookkeeping support.
-
-                    </p>
-
-
-                    <a
-                        href="#contact"
-                        class="btn btn-primary"
-                    >
-                        Start a Conversation
-                    </a>
-
-
-                </div>
-
 
             </div>
-
-
         </section>
 
 
+        <!-- ================= SERVICES ================= -->
+        <section id="services" class="section services">
+            <div class="container">
 
-        <!-- ================= CONTACT ================= -->
-
-        <section
-            id="contact"
-            class="section contact"
-        >
-
-
-            <div class="container contact-container">
-
-
-                <!-- CONTACT INFORMATION -->
-
-                <div class="contact-info">
-
-
-                    <p class="eyebrow">
-                        GET IN TOUCH
-                    </p>
-
+                <div class="section-heading">
+                    <p class="eyebrow">SERVICES</p>
 
                     <h2>
-                        Need bookkeeping help?
+                        Bookkeeping support for your business.
                     </h2>
 
+                    <p>
+                        Reliable bookkeeping services designed to keep
+                        your financial records organized and accurate.
+                    </p>
+                </div>
+
+
+                <div class="services-grid">
+
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+
+                        <h3>
+                            Bank Reconciliation
+                        </h3>
+
+                        <p>
+                            Matching bank transactions with your books
+                            and identifying discrepancies.
+                        </p>
+                    </article>
+
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+
+                        <h3>
+                            Accounts Receivable
+                        </h3>
+
+                        <p>
+                            Organizing customer transactions and keeping
+                            receivables records accurate and up to date.
+                        </p>
+                    </article>
+
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+
+                        <h3>
+                            Accounts Payable
+                        </h3>
+
+                        <p>
+                            Recording and organizing business expenses,
+                            bills, and payable transactions.
+                        </p>
+                    </article>
+
+
+                    <!-- Service 4 -->
+                    <article class="service-card">
+                        <span class="service-number">04</span>
+
+                        <h3>
+                            Financial Reporting
+                        </h3>
+
+                        <p>
+                            Preparing organized financial reports that
+                            provide useful insight into business activity.
+                        </p>
+                    </article>
+
+
+                    <!-- Service 5 -->
+                    <article class="service-card">
+                        <span class="service-number">05</span>
+
+                        <h3>
+                            Bookkeeping Cleanup
+                        </h3>
+
+                        <p>
+                            Reviewing and organizing historical bookkeeping
+                            records to bring your books up to date.
+                        </p>
+                    </article>
+
+
+                    <!-- Service 6 -->
+                    <article class="service-card">
+                        <span class="service-number">06</span>
+
+                        <h3>
+                            Catch-Up Bookkeeping
+                        </h3>
+
+                        <p>
+                            Getting behind bookkeeping work organized and
+                            updated so your records are current.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section contact">
+            <div class="container contact-grid">
+
+                <div class="contact-content">
+
+                    <p class="eyebrow">CONTACT</p>
+
+                    <h2>
+                        Let's keep your books organized.
+                    </h2>
 
                     <p>
-
-                        If you have a bookkeeping project, cleanup,
-                        catch-up work, or ongoing bookkeeping needs,
-                        I'd be happy to discuss the scope with you.
-
+                        Need help with bookkeeping, cleanup, catch-up work,
+                        or ongoing financial record support? Get in touch
+                        and let's discuss your needs.
                     </p>
-
 
 
                     <div class="contact-details">
 
-
-                        <!-- EMAIL -->
-
                         <div class="contact-item">
-
-
-                            <div class="contact-icon">
-                                @
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    Email
-                                </span>
-
-
-                                <a
-                                    href="mailto:rubyann1690@gmail.com"
-                                >
-                                    rubyann1690@gmail.com
-                                </a>
-
-                            </div>
-
-
+                            <span class="contact-label">EMAIL</span>
+                            <a href="mailto:rubyann1690@gmail.com">
+                                rubyann1690@gmail.com
+                            </a>
                         </div>
 
-
-
-                        <!-- LINKEDIN -->
-
                         <div class="contact-item">
-
-
-                            <div class="contact-icon">
-                                IN
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    LinkedIn
-                                </span>
-
-
-                                <p>
-                                    LinkedIn profile coming soon
-                                </p>
-
-                            </div>
-
-
+                            <span class="contact-label">LINKEDIN</span>
+                            <span>Coming Soon</span>
                         </div>
-
 
                     </div>
-
 
                 </div>
 
 
-
                 <!-- CONTACT FORM -->
-
-                <form
-                    class="contact-form"
-                    id="contactForm"
-                >
-
-
-                    <h3>
-                        Tell me about your project
-                    </h3>
-
-
-
-                    <!-- NAME -->
+                <form class="contact-form" id="contactForm">
 
                     <div class="form-group">
-
-
-                        <label for="name">
-                            Your Name
-                        </label>
-
-
+                        <label for="name">Name</label>
                         <input
                             type="text"
                             id="name"
@@ -1161,224 +441,74 @@
                             placeholder="Your name"
                             required
                         >
-
-
                     </div>
 
-
-
-                    <!-- EMAIL -->
-
                     <div class="form-group">
-
-
-                        <label for="email">
-                            Email Address
-                        </label>
-
-
+                        <label for="email">Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="you@example.com"
+                            placeholder="Your email"
                             required
                         >
-
-
                     </div>
 
-
-
-                    <!-- SERVICE -->
-
                     <div class="form-group">
-
-
-                        <label for="service">
-                            What do you need help with?
-                        </label>
-
-
-                        <select
-                            id="service"
-                            name="service"
-                        >
-
-
-                            <option value="cleanup">
-                                Bookkeeping Cleanup
-                            </option>
-
-
-                            <option value="catchup">
-                                Catch-Up Bookkeeping
-                            </option>
-
-
-                            <option value="ongoing">
-                                Ongoing Bookkeeping
-                            </option>
-
-
-                            <option value="reconciliation">
-                                Bank Reconciliation
-                            </option>
-
-
-                            <option value="other">
-                                Other
-                            </option>
-
-
-                        </select>
-
-
-                    </div>
-
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="form-group">
-
-
-                        <label for="message">
-                            Project Details
-                        </label>
-
-
+                        <label for="message">Message</label>
                         <textarea
                             id="message"
                             name="message"
-                            rows="5"
-                            placeholder="Tell me briefly about your bookkeeping project..."
+                            rows="6"
+                            placeholder="Tell me about your bookkeeping needs..."
                             required
                         ></textarea>
-
-
                     </div>
 
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary full-width"
-                    >
-                        Send Inquiry
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
                     </button>
-
-
-                    <p class="form-note">
-                        This form will open your email application.
-                    </p>
-
 
                 </form>
 
-
             </div>
-
-
         </section>
-
 
     </main>
 
 
-
     <!-- ================= FOOTER ================= -->
-
     <footer class="footer">
-
-
         <div class="container footer-content">
 
-
             <div>
-
-
-                <a
-                    href="#home"
-                    class="logo footer-logo"
-                >
-
-                    <span class="logo-mark">
-                        R
-                    </span>
-
-                    <span>
-                        Ruby Ann Junio
-                    </span>
-
+                <a href="#home" class="footer-logo">
+                    Ruby Ann Junio
                 </a>
-
 
                 <p>
                     US Bookkeeper & Accountant
                 </p>
-
-
             </div>
-
-
 
             <div class="footer-links">
-
-
-                <a href="#home">
-                    Home
-                </a>
-
-
-                <a href="#services">
-                    Services
-                </a>
-
-
-                <a href="#portfolio">
-                    Portfolio
-                </a>
-
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </div>
 
-
         </div>
 
-
-
-        <div class="footer-bottom">
-
-
+        <div class="container copyright">
             <p>
-
-                ©
-                <span id="year"></span>
-                Ruby Ann Junio.
-                All rights reserved.
-
+                © 2026 Ruby Ann Junio. All rights reserved.
             </p>
-
-
         </div>
-
-
     </footer>
 
 
-
-    <!-- ================= JAVASCRIPT ================= -->
-
     <script src="script.js"></script>
 
-
 </body>
-
 </html>
-```
