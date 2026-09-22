@@ -1,1 +1,601 @@
+can you make a simple portfolio, Im gonna post it to GIhub, html content are (About Me, Sample Works, Contact Info) In about me section on the left side is my photo in a circle frame, on the right ride list this Details (You started a business to grow it — not to spend hours buried in spreadsheets.
 
+Let me handle your bookkeeping while you focus on your clients, your goals, and taking your business to the next level. I have more than 10 years of bookkeeping experience. Experienced in recording accurate transactions of A/R, creation of P.O, processing payment for A/P, reconciling Bank and Credit Card accounts.
+
+My focus is on helping businesses maintain clean, organized, and reliable financial records. I offer project-based bookkeeping services for businesses that need specific bookkeeping work completed.
+
+Whether you need bookkeeping cleanup, catch-up bookkeeping, or ongoing support, I focus on delivering accurate work based on the agreed scope and output.
+
+✓
+
+10+ years of experience
+
+✓
+
+US bookkeeping experience
+
+✓
+
+Project-based services
+
+✓
+
+Output-focused approach , then on the sample work can you create 3 projects and each project I will upload 3 sample vidoes. on contact info just list this details (email: ruby@gmail.com, Whatsapp: 0913785783) color pink is the theme color
+
+Absolutely
+
+Your portfolio website
+
+Create a file named index.html and paste the following code into it. It includes the complete design, styling, and video placeholders in one file.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruby | Bookkeeping Portfolio</title>
+
+  <style>
+    :root {
+      --pink: #e879a9;
+      --dark-pink: #c94f85;
+      --light-pink: #fff0f6;
+      --white: #ffffff;
+      --text: #40343b;
+      --muted: #786b73;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffafd;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--white);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 15px #00000008;
+    }
+
+    .logo {
+      color: var(--dark-pink);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--dark-pink);
+    }
+
+    section {
+      padding: 80px 8%;
+      scroll-margin-top: 75px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      color: var(--dark-pink);
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+
+    #about {
+      background: var(--light-pink);
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .profile {
+      flex: 0 0 35%;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 270px;
+      height: 270px;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 8px solid white;
+      box-shadow: 0 8px 30px #c94f8525;
+    }
+
+    .profile h3 {
+      margin-top: 20px;
+      font-size: 27px;
+      color: var(--dark-pink);
+    }
+
+    .profile p {
+      color: var(--muted);
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h1 {
+      font-size: 36px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .about-content h1 span {
+      color: var(--dark-pink);
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .check-item {
+      background: white;
+      padding: 12px 15px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .check-item span {
+      color: var(--dark-pink);
+      margin-right: 8px;
+    }
+
+    /* SAMPLE WORKS */
+
+    #works {
+      background: white;
+    }
+
+    .projects {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--light-pink);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 5px 20px #00000008;
+    }
+
+    .project-card h3 {
+      color: var(--dark-pink);
+      margin-bottom: 5px;
+      font-size: 21px;
+    }
+
+    .project-card > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .video-box {
+      margin-bottom: 18px;
+    }
+
+    .video-box video {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      background: #f3dce7;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-box p {
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* CONTACT */
+
+    #contact {
+      background: var(--light-pink);
+      text-align: center;
+    }
+
+    .contact-card {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px #00000008;
+    }
+
+    .contact-card p {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .contact-card a {
+      color: var(--dark-pink);
+      text-decoration: none;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #4a303d;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .about-container {
+        flex-direction: column;
+        gap: 35px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-content h1 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .checklist {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 29px;
+      }
+
+      .profile img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="logo">Ruby.</div>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#works">Sample Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="about-container">
+
+      <div class="profile">
+        <!-- Replace profile.jpg with your own photo -->
+        <img src="profile.jpg" alt="Ruby's profile photo">
+
+        <h3>Ruby</h3>
+        <p>Bookkeeping Professional</p>
+      </div>
+
+      <div class="about-content">
+        <h1>
+          Helping your business grow,
+          <span>one accurate record at a time.</span>
+        </h1>
+
+        <p>
+          <strong>
+            You started a business to grow it — not to spend
+            hours buried in spreadsheets.
+          </strong>
+        </p>
+
+        <p>
+          Let me handle your bookkeeping while you focus on your
+          clients, your goals, and taking your business to the
+          next level.
+        </p>
+
+        <p>
+          I have more than 10 years of bookkeeping experience.
+          Experienced in recording accurate transactions of
+          A/R, creation of P.O, processing payment for A/P,
+          reconciling Bank and Credit Card accounts.
+        </p>
+
+        <p>
+          My focus is on helping businesses maintain clean,
+          organized, and reliable financial records. I offer
+          project-based bookkeeping services for businesses
+          that need specific bookkeeping work completed.
+        </p>
+
+        <p>
+          Whether you need bookkeeping cleanup, catch-up
+          bookkeeping, or ongoing support, I focus on delivering
+          accurate work based on the agreed scope and output.
+        </p>
+
+        <div class="checklist">
+          <div class="check-item">
+            <span>✓</span> 10+ years of experience
+          </div>
+
+          <div class="check-item">
+            <span>✓</span> US bookkeeping experience
+          </div>
+
+          <div class="check-item">
+            <span>✓</span> Project-based services
+          </div>
+
+          <div class="check-item">
+            <span>✓</span> Output-focused approach
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SAMPLE WORKS -->
+  <section id="works">
+    <div class="section-title">
+      <h2>Sample Works</h2>
+      <p>A showcase of my bookkeeping projects and skills.</p>
+    </div>
+
+    <div class="projects">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <h3>Project 01</h3>
+        <p>Bookkeeping Sample</p>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project1-video1.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 1</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project1-video2.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 2</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project1-video3.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 3</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <h3>Project 02</h3>
+        <p>Accounts Payable & Receivable</p>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project2-video1.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 1</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project2-video2.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 2</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project2-video3.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 3</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <h3>Project 03</h3>
+        <p>Bank & Credit Card Reconciliation</p>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project3-video1.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 1</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project3-video2.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 2</p>
+        </div>
+
+        <div class="video-box">
+          <video controls preload="metadata">
+            <source src="videos/project3-video3.mp4"
+                    type="video/mp4">
+          </video>
+          <p>Sample Video 3</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Let's Connect!</h2>
+      <p>Have a bookkeeping project in mind? Feel free to reach out.</p>
+    </div>
+
+    <div class="contact-card">
+      <p>
+        <strong>Email:</strong><br>
+        <a href="mailto:ruby@gmail.com">
+          ruby@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>WhatsApp:</strong><br>
+        <a href="https://wa.me/63913785783">
+          0913785783
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Ruby | Bookkeeping Portfolio</p>
+    <p>Accurate Records. Reliable Support.</p>
+  </footer>
+
+</body>
+</html>
+How to upload it to GitHub
+
+1. Create a repository
+
+Go to
+GitHub — New repository 
+. Name it ruby-portfolio and create it.
+
+2. Upload your files
+
+Add index.html, your profile photo named profile.jpg, and a folder called videos containing your 9 MP4 files.
+
+3. Publish your website
+
+In your repository, go to Settings → Pages. Under Build and deployment, select Deploy from a branch, choose main and / (root), then Save.
+
+Your website will be available at an address similar to:
+
+https://YOUR-USERNAME.github.io/ruby-portfolio/
+
+Important: Your files should look like this
+
+ruby-portfolio/
+
+index.html
+
+profile.jpg
+
+videos/
+
+project1-video1.mp4
+
+project1-video2.mp4
+
+project1-video3.mp4
+
+project2-video1.mp4 … project2-video3.mp4
+
+project3-video1.mp4 … project3-video3.mp4
+
+A few things to remember:
+
+Replace profile.jpg with your actual photo. I haven't inserted a personal photo, so upload yours using that exact filename.
+
+Replace the sample video filenames with your own, or rename your videos to match the code.
+
+GitHub Pages works well for hosting the HTML, but large videos can make your repository slow or exceed GitHub's file-size limits. Consider hosting the videos externally if they are large.
+
+The WhatsApp link uses the international Philippines format (63) so visitors can open a chat with you.
