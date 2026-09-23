@@ -100,8 +100,7 @@
       width: 380px;
       height: 380px;
       max-width: 100%;
-      object-fit: cover;
-      object-position: center 10%;
+      object-fit: contain;
       border-radius: 50%;
       border: 8px solid white;
       box-shadow: 0 10px 32px #c94f8530;
