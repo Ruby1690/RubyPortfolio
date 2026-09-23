@@ -153,6 +153,13 @@
       line-height: 1.6;
     }
 
+   .about-me {
+      margin-top: 20px;  /*space between the Paragraph*/
+      font-size: 14px;   
+      line-height: 1.6; /*add nice vertical breathing room between vertical line*/
+
+   }
+
     .about-content p:last-of-type {
       margin-bottom: 0;
     }
