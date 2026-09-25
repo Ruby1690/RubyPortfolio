@@ -92,11 +92,13 @@
       max-width: 850px; /*limits it's width uo to max 850px*/
       margin: 0 auto 50px; /* center the box element, 0 margin at top, auto at left, right, 50 px at the bottom*/
       text-align: center; /*align text at the center*/
-      font-size: 29px;
       color: var(--dark-pink);
 
-   .about-intro p {
-      font-size: 16px;
+   .about-intro h1 {
+      font-size: 29px;
+   }
+      .about-intro p {
+      font-size: 14px;
    }
       
 
