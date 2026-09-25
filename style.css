@@ -255,6 +255,7 @@
     #contact {
       background: var(--light-pink);
       text-align: center;
+      display: flex;
     }
 
     .contact-card {
