@@ -274,7 +274,6 @@
     .contact-card {  
       background: white;
       flex: 1;
-      min-width:150px;
       margin: auto;
       padding: 10px;
       border-radius: 25px;
