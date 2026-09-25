@@ -260,6 +260,10 @@
       text-align: center;
       margin-bottom: 40px;
     }
+
+   .contact h2{
+   color: var(--dark-pink);
+   }
  
    .contact-container{
       display: flex;
@@ -267,9 +271,9 @@
       gap: 25px;
    }
 
-    .contact-card {
-      flex: 1;
+    .contact-card {  
       background: white;
+      flex: 1;
       min-width: 200px;
       margin: auto;
       padding: 20px;
