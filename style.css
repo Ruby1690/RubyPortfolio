@@ -254,10 +254,14 @@
 
     #contact {
       background: var(--light-pink);
-      text-align: center;
-      display: flex;
+   
     }
-   .contact-container{
+   .contact-section {
+      background: var(--light-pink);
+      text-align: center;
+    }
+ 
+.contact-container{
       display: flex;
       justify-content: center;
       gap: 25px;
