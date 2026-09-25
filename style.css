@@ -90,15 +90,15 @@
 
    .about-intro{
       max-width: 850px; /*limits it's width uo to max 850px*/
-      margin: 0 auto 25px; /* center the box element, 0 margin at top, auto at left, right, 50 px at the bottom*/
+      margin: 0 auto 20px; /* center the box element, 0 margin at top, auto at left, right, 50 px at the bottom*/
       text-align: center; /*align text at the center*/
       color: var(--dark-pink);
 
    .about-intro h1 {
-      font-size: 29px;
+      font-size: 40px;
    }
       .about-intro p {
-      font-size: 14px;
+      font-size: 18px;
    }
       
 
