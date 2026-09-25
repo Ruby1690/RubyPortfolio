@@ -257,7 +257,6 @@
    
     }
    .contact-section {
-      background: var(--light-pink);
       text-align: center;
       margin-bottom: 40px;
     }
@@ -266,20 +265,17 @@
       display: flex;
       justify-content: center;
       gap: 25px;
-      margin: auto;
-      max-width: 1100px; 
    }
 
     .contact-card {
-      flex: 1
+      flex: 1;
       background: white;
       min-width: 200px;
       margin: auto;
       padding: 20px;
       border-radius: 25px;
       box-shadow: 0 5px 25px #00000008;
-      flex: 1
-      align: center;
+      text-align: center;
     }
 
     .contact-card p {
