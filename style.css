@@ -268,12 +268,12 @@
    .contact-container{
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 15px;
    }
 
     .contact-card {  
       background: white;
-      margin: auto;
+      width: 280px;
       padding: 10px;
       border-radius: 25px;
       box-shadow: 0 5px 25px #00000008;
