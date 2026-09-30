@@ -118,7 +118,7 @@
       height: 400px; /*must match width to be a perfect circle*/
       border-radius: 50%; /*makes it circular*/
       border: 8px solid white;
-      box-shadow; 0 10px 32 pcs #c94f8530;
+      box-shadow: 0 10px 32px #c94f8530;
       overflow: hidden; /*clips the image edges to the circle*/
       background-color:#f5f4f5; /*color white background to match the image backgrounf*/
 
@@ -126,7 +126,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin 0 auto 15px; /* center the circle itself and add space below */
+      margin: 0 auto 15px; /* center the circle itself and add space below */
       
     }
 
